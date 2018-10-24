@@ -1,8 +1,33 @@
-
-
-
+:root {
+    --primario: #006bb1;
+    --secundario: #1a8ceb;
+    --gris: #001e5a;
+}
 
 div.franja-address{
     background-color:#006bb1;
+    color:white;
+}
+
+header .nav-link{
+    color: #006bb1;
+}
+
+header .nav-link:hover{
+    color: #001e5a;
+    border-bottom: 2px solid #001e5a;
+}
+
+header .nav-link.active{
+    background-color: #006bb1;
+    color: white;
+    border-radius: 15px;
+}
+
+footer.footer{
+    background-color: #006bb1
+}
+
+footer.footer .nav-link, p{
     color:white;
 }
