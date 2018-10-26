@@ -69,6 +69,55 @@ header .nav-link.active{
     z-index: 100;
 }
 
+/** Productos **/
+.card-body .btn-primary{
+    background-color: #006bb1 !important;
+    border-color: #006bb1 !important;
+}
+
+.card-body .btn-primary:hover{
+    background-color:#1a8ceb !important;
+    border-color: #1a8ceb !important;
+
+}
+/** Proyectos Realizados **/
+/* === COMMENTS === */
+.post-comments-badge {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    right: 20px;
+    border: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #1D71B8;
+    text-align: center;
+    display: table;
+}
+
+.post-comments-badge a {
+   display: table-cell;
+   vertical-align: middle;
+   color: white;
+   font-size: 20px;
+   line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+   display: block;
+   font-size: 15px;
+   padding: 0;
+   margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+   background-color: #213280;
+}
+
+
+
+/** Footer **/
 .copyright{
     font-weight: 700;
 }
