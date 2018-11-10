@@ -179,8 +179,16 @@ aside .card-footer a{
 h3.maps{
     font-size: 1rem;
     color:#006bb1;
-    text-justify: distribute;
 }
+
+div.bg-primary.address{
+    background-color: #006bb1!important;
+}
+
+div.address{
+    color:white;
+}
+
 
 /** Footer **/
 .copyright{
