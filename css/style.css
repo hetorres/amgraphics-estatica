@@ -16,9 +16,19 @@ p{
     font-size: 1rem;
 }
 
+@include media-breakpoint-up(md) {
+    .custom-class {
+      display: block;
+    }
+  }
+
 div.franja-address{
     background-color:#006bb1;
     color:white;
+}
+
+header #navbar-principal a{
+    font-size: 0.9rem;
 }
 
 header .nav-link{
@@ -176,8 +186,8 @@ aside .card-footer a{
 
 
 /** Contacto **/
-h3.maps{
-    font-size: 1rem;
+
+main div h2.contacto{
     color:#006bb1;
 }
 
@@ -189,6 +199,10 @@ div.address{
     color:white;
 }
 
+h3.maps{
+    font-size: 1rem;
+    color:#006bb1;
+}
 
 /** Footer **/
 .copyright{
