@@ -1,7 +1,7 @@
 :root {
     --primario: #006bb1;
     --secundario: #1a8ceb;
-    --gris: #001e5a;
+    --terciario: #001e5a;
 }
 
 body{
@@ -65,7 +65,178 @@ header .nav-link.active{
     background-image: url(../img/impr-lona.jpg);
 }
 
-/** Nosotros **/
+.bg-primary{
+    background-color: #006bb1!important;
+}
+
+.bg-secondary{
+    background-color:#001e5a !important;
+}
+
+/** == Inicio == **/
+/** Sección Historia **/
+.imagen > div{
+    height: 20rem;
+}
+
+@media (min-width:768px){
+    .imagen > div{
+        height: 25rem;
+    }
+}
+
+.bg-historia, .bg-mision, .bg-ofrecer, .bg-servicios{
+    background-size: cover;
+    background-position: center;
+
+}
+
+.bg-historia{
+    background-image: url(../img/img-1500x1000.png);
+}
+
+.bg-mision{
+    background-image: url(../img/img-1500x1000.png);
+}
+
+.imagen-superior .contenido{
+    border-top:1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.imagen-inferior .contenido{
+    border-top:1px solid white;
+    border-bottom: 1px solid white;
+}
+
+@media (min-width:768px){
+    .imagen-inferior .bg-secondary{
+        order:2;
+    }
+}
+
+/* Seccion Ofrecemos */
+.imagen-ofrece > div{
+    height: 20rem;
+}
+
+@media (min-width:720px){
+    .imagen-ofrece > div{
+        height: 47rem;
+    }
+}
+
+@media (min-width:960px){
+    .imagen-ofrece > div{
+        height: 47rem;
+    }
+}
+
+@media (min-width:1300px){
+    .imagen-ofrece > div{
+        height: 40rem;
+    }
+}
+
+.bg-ofrecer{
+    background-image: url(../img/img-1500x1000.png);
+}
+
+@media (min-width:768px){
+    .container-text-ofrecer{
+        background-color: lightgray;
+        position:relative;
+        left:-30% ;
+        top:45px;
+    }
+}
+
+@media (min-width:1300px){
+    .container-text-ofrecer{
+        background-color: lightgray;
+        position:relative;
+        left:-30% ;
+        top:15px;
+    }
+}
+
+.container-text-ofrecer p{
+    font-size: .9rem;
+}
+
+@media (min-width:768px){
+    .container-text-ofrecer p{
+        font-size: 1rem;
+    }
+
+}
+
+/** Productos **/
+body.index .productos{
+    background-color: #f5f5f5;
+}
+
+/** Servicios **/
+.imagen-servicio > div{
+    height: 20rem;
+}
+
+@media (min-width:720px){
+    .imagen-servicio > div{
+        height: 47rem;
+    }
+}
+
+@media (min-width:960px){
+    .imagen-servicio > div{
+        height: 47rem;
+    }
+}
+
+@media (min-width:1300px){
+    .imagen-servicio > div{
+        height: 40rem;
+    }
+}
+
+.bg-servicios{
+    background-image: url(../img/img-1500x1000.png);
+}
+
+@media (min-width:768px){
+    .container-text-servicios{
+        background-color:white;
+        position:relative;
+        left:-30% ;
+        top:45px;
+    }
+}
+
+@media (min-width:1300px){
+    .container-text-servicios{
+        background-color:white;
+        position:relative;
+        left:-30% ;
+        top:15px;
+    }
+}
+
+.container-text-serivicios p{
+    font-size: .9rem;
+}
+
+@media (min-width:768px){
+    .container-text-servicios p{
+        font-size: 1rem;
+    }
+
+}
+
+.icon-img{
+    height: 80px;
+}
+
+/**== Nosotros ==**/
 .contenido-nosotros{
     margin-top: -5rem;
     border: 1px solid #e1e1e1;

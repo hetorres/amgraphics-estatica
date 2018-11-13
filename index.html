@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="index">
         <header>
-            <div class="container franja-address"><!-- Contenedor de dirección-->
+            <div class="container-fluid franja-address"><!-- Contenedor de dirección-->
                 <address class="container"><!--contenedor direccion-->
                     <div class="row justify-content-end align-items-center animated bounceInLeft delay-10s"><!--fila direccion-->
                         <span></span>
@@ -31,7 +31,7 @@
                 </address><!--fin contenedor direccion-->
             </div><!--Fin de contenedor de direccion-->
            
-            
+            <!-- == Logo == -->
             <div class="container franja-logo"><!--Contenedor de Logo y Menu-->
                 <div class="row justify-content-center align-items-center"><!--fila logo-menu-->
                     <div class="col-lg-4 col-8 mb-4 mb-md-0"><!--contendor logo-->
@@ -58,72 +58,287 @@
             </div><!--Fin contenedor de logo y menu-->
         </header>
 
-        <div class="container my-4">
-                <div id="demo" class="carousel slide" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                          <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="img/img-1300x600.png" alt="Los Angeles" width="1100" height="500">
+        <!--== Carousel ==-->
+        <div class="container-fluid my-4">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <img src="img/img-1800x500.png" alt="Los Angeles" width="100%" height="auto">
                             <div class="carousel-caption animated bounceInLeft">
-                              <h3>Los Angeles</h3>
-                              <p>We had such a great time in LA!</p>
+                                <h3>Los Angeles</h3>
+                                <p>We had such a great time in LA!</p>
                             </div>   
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/img-1300x600.png" alt="Chicago" width="1100" height="500">
+                    </div><!--fin carousel-item-->
+                    <div class="carousel-item">
+                            <img src="img/img-1800x500.png" alt="Chicago" width="100%" height="auto">
                             <div class="carousel-caption animated bounceInLeft">
-                              <h3>Chicago</h3>
-                              <p>Thank you, Chicago!</p>
+                                <h3>Chicago</h3>
+                                <p>Thank you, Chicago!</p>
                             </div>   
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/img-1300x600.png" alt="New York" width="1100" height="500">
+                    </div><!--fin carousel-item-->
+                    <div class="carousel-item">
+                            <img src="img/img-1800x500.png" alt="New York" width="100%" height="auto">
                             <div class="carousel-caption animated bounceInLeft">
-                              <h3>New York</h3>
-                              <p>We love the Big Apple!</p>
+                                <h3>New York</h3>
+                                <p>We love the Big Apple!</p>
                             </div>   
-                          </div>
+                    </div><!--fin carousel-item-->
+                </div><!--fin carousel-inner-->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                </a>
+            </div><!--fin demo-->
+        </div><!--fon container my-4-->
+
+        <!--== Quienes somos ==-->
+        <div class="container">
+            <div class="contenido text-center py-2">
+                <h4>Quienes Sómos</h4>
+                <h2>Nuestra <span style="color:#006bb1">Historia</span></h2>
+            </div>
+            <div class="container-fluid imagenes-principales">
+                <div class="row imagen-superior imagen">
+                    <div class="col-md-6 bg-primary">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-sm-8 col-md-8">
+                                <div class="contenido text-center text-light py-2">
+                                    <h2 class="text-uppercasse">Historia</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi neque quae quisquam temporibus facilis cupiditate fugiat maxime voluptatum architecto quos hic veritatis, quia incidunt illum, rem corrupti? Quibusdam, quis.</p>
+                                </div><!--fin contenido-->
+                            </div><!--fin col-md-6-->
+                        </div><!--fin row-->
+                    </div><!--fin col-sm-8-->
+                    <div class="col-md-6 bg-historia"></div>
+                </div><!--fin row-->
+                <div class="row imagen-inferior imagen">
+                    <div class="col-md-6 bg-secondary">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-sm-8 col-md-8">
+                                    <div class="contenido text-center text-light py-2">
+                                        <h2 class="text-uppercasse">Misión</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi neque quae quisquam temporibus facilis cupiditate fugiat maxime voluptatum architecto quos hic veritatis, quia incidunt illum, rem corrupti? Quibusdam, quis.</p>
+                                    </div><!--fin contenido-->
+                                </div><!--fin col-md-6-->
+                            </div><!--fin row-->
+                        </div><!--fin col-sm-8-->
+                    <div class="col-md-6 bg-mision"></div>
+                </div><!--fin row-->
+            </div><!--fin container-fluid-->
+        </div><!--container-->
+
+        <!--== Que ofrecemos ==-->
+        <div class="container-fluid my-3">
+            <div class="row imagen-ofrecer imagen-ofrece">
+                <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 bg-ofrecer mb-2 mb-md-0"></div><!--fin col-sm-12-->
+                <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 h-100">
+                    <div class="container-text-ofrecer text-left p-5 border border-secondary">
+                        <h3 class="text-center"><span style="color: #333333;">Que ofrecemos</span></h3>
+                        <h2 class="text-center"><span style="color: #333333;">para crecer</span> JUNTOS!</h2>
+                        <p>El futuro de tu negocio esta seguro si su PRIMERA IMPRESION es la correcta, permítamos ayudarle a crear una IMAGEN con IMPACTO, que multiplique sus INGRESOS y que pueda usted pagar sin arriesgar el BIENESTAR de su NEGOCIO.</p>
+                        <p>Tenemos la EXPERIENCIA y el equipamiento necesario para que tu NEGOCIO transmita la IMPRESION que se necesita al captar CLIENTES y que su marca sea bien RECONOCIDA.</p>
+                        <p>Deja que IMPRESIONES TIJUANA se haga cargo de tus necesidades GRAFICAS para que no pierdas en ENFOQUE en tu negocio, con gusto nos pondremos tu camiseta para crecer JUNTOS.</p>
+                        <h3><span style="font-size: 23.04px; color: #333333;">Cómo es tu </span><span style="font-size: 23.04px; color: #006bb1;">Primera Impresión?</span></h3>
+                    </div><!--fin container-text-ofrecer-->
+                </div><!--fin col-sm-12-->
+            </div><!--fin row imagen-->
+        </div><!--fin container fluid-->
+
+        <!--== Producos ==-->
+        <main class="container productos mb-3">
+            <div class="row justify-content-center ">
+                <div class="col-12 py-3 px-5  bg-light">
+                    <h2 class="text-center my-4 separador">Productos</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center animated bounceInRight delay-10s">
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body leermas">
+                            <h5 class="card-title">Impresiones Digitales</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
                         </div>
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </a>
-                      </div>
-        
-
-        </div>
-
-
-
-
-
-
-
-
-        <footer class="p5">
-            <div class="footer container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <nav class="nav text-uppercase d-flex flex-column flex-md-row text-center text-md-left">
-                            <a href="index.html" class="nav-link active">Inicio</a>
-                                <a href="nosotros.html" class="nav-link">Nosotros</a>
-                                <a href="productos.html" class="nav-link">Productos</a>
-                                <a href="proyectos.html" class="nav-link">Proyectos</a>
-                                <a href="galeria.html" class="nav-link">Galería</a>
-                                <a href="contacto.html" class="nav-link">Contacto</a>                            
-                        </nav>
                     </div>
-                    <div class="col-md-4">
-                        <p class="text-center text-md-right copyright mt-4 mt-md-0 pt-2">Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Letreros Luminosos</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Letras formadas</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center animated bounceInLeft delay-10s">
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Alucobond</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Graqbados</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Toldas</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center animated bounceInRight delay-10s">
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Señalizaciones</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Vallas</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sublimación</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center animated bounceInLeft delay-10s">
+                <div class="col-md-4 py-3 px-3">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="img/img-286x180.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Industrias Chandy</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <!--== Servicios ==-->
+        <div class="container-fluid my-3">
+            <div class="row imagen-servicios imagen-servicio">
+                <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 bg-servicios mb-2 mb-md-0">
+                </div><!--fin col-sm-12-->
+                <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 h-100">
+                    <div class="container-text-servicios text-left p-5 border border-secondary">
+                        <h3 class="text-center"><span>Que Hacemos</span></h3>
+                        <h2 class="text-center"><span>Nuestros</span> SERVICIOS!</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <div class="icon p-3">
+                                            <div class="icon-inner">
+                                                <img class="icon-img" src="img/designer-cup-1.svg" alt="">
+                                            </div><!--fin icon-inner-->
+                                        </div><!--fin icon-box-img-->
+                                    </div><!--fin icon-box-->
+                                    <div class="text-center">
+                                        <h3>Impresión Digital</h3>
+                                        <p>Utilizamos las técnicas más avanzada de impresión para garantizar que su empresa sea tomada en serio por sus clientes.</p>
+                                    </div><!--fin icon-box-text-->
+                                </div><!--fin col-sm-12-->
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="text-center">
+                                        <div class="icon p-3">
+                                            <div class="icon-inner">
+                                                <img class="icon-img" src="img/paint-roller-Final.svg" alt="">
+                                            </div><!--fin icon-inner-->
+                                        </div><!--fin icon-box-img-->
+                                    </div><!--fin icon-box-->
+                                    <div class="text-center">
+                                        <h3>Instalaciones</h3>
+                                        <p>Permítanos encargarnos de sus instalaciones, nuestro personal realizará el trabajo y garantizará el éxito de su inversion</p>
+                                    </div><!--fin icon-box-text-->
+                                </div><!--fin col-sm-12-->
+                            </div><!--fin row-->
+                        </div><!--fin container-->
+                    </div><!--fin container-text-servicios-->
+                </div><!--fin col-sm-12-->
+            </div><!--fin row imagen-servicios-->
+        </div><!--fin container fluid-->
+    
+    
+
+
+
+
+
+
+
+        <footer class="container-fluid">
+            <div class="row footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <nav class="nav text-uppercase d-flex flex-column flex-md-row text-center text-md-left">
+                                <a href="index.html" class="nav-link active">Inicio</a>
+                                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                                    <a href="productos.html" class="nav-link">Productos</a>
+                                    <a href="proyectos.html" class="nav-link">Proyectos</a>
+                                    <a href="galeria.html" class="nav-link">Galería</a>
+                                    <a href="contacto.html" class="nav-link">Contacto</a>                            
+                            </nav>
+                        </div><!--fin col-md-8-->
+                        <div class="col-md-4">
+                            <p class="text-center text-md-right copyright mt-4 mt-md-0 pt-2">Todos los derechos reservados</p>
+                        </div><!--fin col-md-4-->
+                    </div><!--fin row-->
+                </div><!--fin container-->
+            </div><!--fin row footer-->
         </footer>
 
 
