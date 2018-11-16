@@ -5,14 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+        <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="index">
         <header>
             <div class="container-fluid franja-address"><!-- Contenedor de dirección-->
-                <address class="container"><!--contenedor direccion-->
+                <address class="container animatedParent"><!--contenedor direccion-->
                     <div class="row justify-content-end align-items-center animated bounceInLeft delay-10s"><!--fila direccion-->
                         <span></span>
                         <a ><span class="fas fa-mobile-alt"></span> +507 6490-9548 <span class="fas fa-phone"></span> +507 958-5427</a>
@@ -99,47 +100,45 @@
         </div><!--fon container my-4-->
 
         <!--== Quienes somos ==-->
-        <div class="container">
-            <div class="contenido text-center py-2">
+        <div class="container my-5">
+            <div class="contenido text-center my-2">
                 <h4>Quienes Sómos</h4>
                 <h2>Nuestra <span style="color:#006bb1">Historia</span></h2>
             </div>
-            <div class="container-fluid imagenes-principales">
-                <div class="row imagen-superior imagen">
-                    <div class="col-md-6 bg-primary">
-                        <div class="row justify-content-center align-items-center h-100">
-                            <div class="col-sm-8 col-md-8">
-                                <div class="contenido text-center text-light py-2">
-                                    <h2 class="text-uppercasse">Historia</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi neque quae quisquam temporibus facilis cupiditate fugiat maxime voluptatum architecto quos hic veritatis, quia incidunt illum, rem corrupti? Quibusdam, quis.</p>
-                                </div><!--fin contenido-->
+            <div class="container my-5">
+                <div class="row imagen">
+                    <div class="col-md-6 bg-light animatedParent">
+                        <div class="row historia align-items-center animated bounceInLeft delay-0.5s">
+                            <div class="col-md-6">
+                                <img src="img/historia-aym-350X250.png" alt="historia" class="img-fluid">
                             </div><!--fin col-md-6-->
-                        </div><!--fin row-->
-                    </div><!--fin col-sm-8-->
-                    <div class="col-md-6 bg-historia"></div>
-                </div><!--fin row-->
-                <div class="row imagen-inferior imagen">
-                    <div class="col-md-6 bg-secondary">
-                            <div class="row justify-content-center align-items-center h-100">
-                                <div class="col-sm-8 col-md-8">
-                                    <div class="contenido text-center text-light py-2">
-                                        <h2 class="text-uppercasse">Misión</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi neque quae quisquam temporibus facilis cupiditate fugiat maxime voluptatum architecto quos hic veritatis, quia incidunt illum, rem corrupti? Quibusdam, quis.</p>
-                                    </div><!--fin contenido-->
-                                </div><!--fin col-md-6-->
-                            </div><!--fin row-->
-                        </div><!--fin col-sm-8-->
-                    <div class="col-md-6 bg-mision"></div>
-                </div><!--fin row-->
-            </div><!--fin container-fluid-->
-        </div><!--container-->
+                            <div class="col-md-6">
+                                <p><span class="logo-color">A&M Graphcis</spna> es el resultado de un grupo de diseñadores que se propusieron ofrecer imagen e impresión de calidad a las personas y empresas de nuestra ciudad.</p>
+                                <p>La empresa quedo constituida en el xxxx y desde entonces con el icono más representativo de Santiago de Veraguas hemos logrado nuestras metas e incluso traspasado fronteras.</p>
+                            </div><!--fin col-md-6-->
+                        </div><!--fin row historia-->
+                    </div><!--fin col-md-6-->
+                    <div class="col-md-6 bg-ligth animatedParent">
+                        <div class="row mision align-items-center  animated bounceInRight delay-0.5s">
+                            <div class="col-md-6">
+                                <img src="img/mision-aym-350X250.png" alt="mision" class="img-fluid">
+                            </div><!--fin col-md-6-->
+                            <div class="col-md-6">
+                                <p>En A&M Graphics estamos comprometidos con el SERVICIO AL CLIENTE, sabemos que una IMAGEN DE CALIDAD hace la diferencia para su propósito.</p>
+                                <p>En este mercado tan competido tu necesitas una empresa como Impresiones Tijuana que trabaje en EQUIPO y ESCUCHE tus necesidades, para que cada centavo invertido en tu PUBLICIDAD se multiplique.</p>
+                            </div><!--fin col-md-6-->
+                        </div><!--fin row historia-->
+                    </div><!--fin col-md-6-->
+                </div><!--fin row imagen-->
+            </div><!--container-->
+        </div><!--fin container-->
 
         <!--== Que ofrecemos ==-->
-        <div class="container-fluid my-3">
+        <div class="container-fluid my-3 animatedParent">
             <div class="row imagen-ofrecer imagen-ofrece">
-                <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 bg-ofrecer mb-2 mb-md-0"></div><!--fin col-sm-12-->
+                <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 bg-ofrecer mb-2 mb-md-0 animated bounceInLeft"></div><!--fin col-sm-12-->
                 <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 h-100">
-                    <div class="container-text-ofrecer text-left p-5 border border-secondary">
+                    <div class="container-text-ofrecer text-left p-5 border border-secondary animated bounceInRight">
                         <h3 class="text-center"><span style="color: #333333;">Que ofrecemos</span></h3>
                         <h2 class="text-center"><span style="color: #333333;">para crecer</span> JUNTOS!</h2>
                         <p>El futuro de tu negocio esta seguro si su PRIMERA IMPRESION es la correcta, permítamos ayudarle a crear una IMAGEN con IMPACTO, que multiplique sus INGRESOS y que pueda usted pagar sin arriesgar el BIENESTAR de su NEGOCIO.</p>
@@ -152,7 +151,7 @@
         </div><!--fin container fluid-->
 
         <!--== Producos ==-->
-        <main class="container productos mb-3">
+        <main class="container productos mb-3 animatedParent">
             <div class="row justify-content-center ">
                 <div class="col-12 py-3 px-5  bg-light">
                     <h2 class="text-center my-4 separador">Productos</h2>
@@ -268,11 +267,11 @@
         </main>
 
         <!--== Servicios ==-->
-        <div class="container-fluid my-3">
+        <div class="container-fluid my-3 animatedParent">
             <div class="row imagen-servicios imagen-servicio">
-                <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 bg-servicios mb-2 mb-md-0">
+                <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 bg-servicios mb-2 mb-md-0 animated bounceInLeft">
                 </div><!--fin col-sm-12-->
-                <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 h-100">
+                <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 h-100 animated bounceInRight">
                     <div class="container-text-servicios text-left p-5 border border-secondary">
                         <h3 class="text-center"><span>Que Hacemos</span></h3>
                         <h2 class="text-center"><span>Nuestros</span> SERVICIOS!</h2>
@@ -344,6 +343,7 @@
 
 
         <script src="js/jquery.js"></script>
+        <script src="js/css3-animate-it.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
     </body>

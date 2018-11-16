@@ -75,45 +75,7 @@ header .nav-link.active{
 
 /** == Inicio == **/
 /** Sección Historia **/
-.imagen > div{
-    height: 20rem;
-}
 
-@media (min-width:768px){
-    .imagen > div{
-        height: 25rem;
-    }
-}
-
-.bg-historia, .bg-mision, .bg-ofrecer, .bg-servicios{
-    background-size: cover;
-    background-position: center;
-
-}
-
-.bg-historia{
-    background-image: url(../img/img-1500x1000.png);
-}
-
-.bg-mision{
-    background-image: url(../img/img-1500x1000.png);
-}
-
-.imagen-superior .contenido{
-    border-top:1px solid white;
-    border-bottom: 1px solid white;
-}
-
-.imagen-inferior .contenido{
-    border-top:1px solid white;
-    border-bottom: 1px solid white;
-}
-
-@media (min-width:768px){
-    .imagen-inferior .bg-secondary{
-        order:2;
-    }
-}
 
 /* Seccion Ofrecemos */
 .imagen-ofrece > div{
